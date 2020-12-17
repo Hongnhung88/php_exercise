@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exam 1</title>
+</head>
+<body>
+	<h1>Thanh toán</h1>
+	<form action=".">
+		<label>Tên đầy đủ</label>
+		<input type="text" name="fullname" size="70" placeholder="Nhập tên đầy đủ người mua hàng" autofocus required><br><br>
+		<label>Password</label>
+		<input type="password" name="pass" size="40" placeholder="Nhập password" required><br><br>
+		<label>Email</label>
+		<input type="email" name="email" size="40" placeholder="Nhập email" required><br><br>
+		<label>Ngày sinh</label>
+		<input type="date" name="date of birth" size="40" required><br><br>
+		<label>Mặt hàng mua</label>
+		<input list="item">
+		<datalist id="item">
+			<option value="Shoes">
+			<option value="Socks">
+			<option value="Shirt">
+			<option value="Sandals">
+			<option value="Trousers">
+		</datalist><br><br>
+		<label>Số lượng mua</label>
+		<input type="number" name="Quantity" min="1" max="5"><br><br>
+		<label>Bán kính vận chuyển</label>
+		<input type="range" name="shipping radius" min="10"
+		max="20"><br><br>
+		<input type="submit" name="submit" value="Đăng kí">
+	</form>
+</body>
+</html>
