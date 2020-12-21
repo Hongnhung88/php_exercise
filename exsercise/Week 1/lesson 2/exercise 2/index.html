@@ -7,51 +7,36 @@
 <body>
 	<h1 style="color: purple">A Simple Form</h1>
 	<h2 style="color: #FF4E5D">Form fundamental</h2>
-		<form id="orderForm">
+		<form action=".">
 		<fieldset>
 			<legend>Customer Info</legend>
-			<p>
 				<label for="fullname">Name: </label>
-				<input id="fullname" name="name" type="text" placeholder="Enter your name" size="50" autofocus>
-
-			<p>	
+				<input id="fullname" name="name" type="text" placeholder="Enter your name" size="50" autofocus><br>
 				<label for="number">Telephone:</label>
-				<input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="1-234-567-8910" size="50">
-			</p>
-			<p>
+				<input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="1-234-567-8910" size="50"><br>
 				<label for="Email">Email address:</label>
-				<input id="Email" type="text" name="Email" placeholder="Enter your email address" size="50">
-			</p>
-			<p>
+				<input id="Email" type="text" name="Email" placeholder="Enter your email address" size="50"><br>
 				<label for="Gender">Gender:</label>
-				<input type="radio" name="gender" id="male" value="male" >
-					<label for="male">Male</label>
+				<input type="radio" name="gender" id="male" value="male">
+				<label for="male">Male</label>
 				<input type="radio" name="gender" id="female" value="female">
-					<label for="female">Female</label>
-			</p>
-			<p>	
-				<label for="Hobbies">Hobbies:</label>
+				<label for="female">Female</label><br>
+				<label for="Hobbies">Hobbies:</label><br>
 				<input type="checkbox" name="Hobbies" id="Basketball" value="Basketball">
-					<label for="Basketball">Basketball</label>
+				<label for="Basketball">Basketball</label><br>
 				<input type="checkbox" name="Hobbies" id="Football" value="Football">
-					<label for="Football">Football</label>
+				<label for="Football">Football</label><br>
 				<input type="checkbox" name="Hobbies" id="Badminton" value="Badminton">
-					<label for="Badminton">Badminton</label>
-			</p>
+				<label for="Badminton">Badminton</label>
 		</fieldset>
-	</form>
-	<form id="bookForm">
 		<fieldset>
 			<legend>Books</legend>
-			<p>
 				<label for="name">Name:</label>
 				<input type="text" name="name" id="name" size="50">
 				<label for="Quantity">Quantity (Maxmum 5):</label>
 				<input type="number" name="Quantity" min="1" max="5">
-			</p>
 		</fieldset>
 	</form>
-	<button type="Submit">Submit</button>
-	<button type="Reset">Reset</button>
-	</body>
+	<input type="submit" value="Submit">
+	<input type="submit" value="Reset">
 </html>
