@@ -5,17 +5,23 @@
 	<title>EXAM 5</title>
 	<style>
 		::-webkit-input-placeholder { /* Edge */
-  color: black;
+  		color: black;
+		}
+		:-ms-input-placeholder { /* Internet Explorer */
+  		color: black;
+		}
+		::placeholder {
+  		color: black;
 }
-:-ms-input-placeholder { /* Internet Explorer */
-  color: black;
-}
-::placeholder {
-  color: black;
-}
-	table,td, th{border: 1px solid black;}
-	#tb1 {border: none;}
-	#tb1 td{border: none;}
+	table,td, th{
+		border: 1px solid black;
+	}
+	#tb1 {
+		border: none;
+	}
+	#tb1 td{
+		border: none;
+	}
 	</style>
 </head>
 <body>
@@ -24,11 +30,11 @@
 	<table id="tb1">
 		<tr>
 			<td><label for="name">Name:</label></th>
-			<td><input type="text" name="name" id="name" size="25" placeholder="Albert"></td>
+			<td><input type="text" name="name" size="25" placeholder="Albert"></td>
 		</tr>	
 		<tr>
 			<td><label for="age">Age: </label></td>
-			<td><input type="text" name="age" id="age" size="25" placeholder="39"></td>
+			<td><input type="text" name="age" size="25" placeholder="39"></td>
 			<td><button>Add</button></td>
 		</tr>
 	</table>
