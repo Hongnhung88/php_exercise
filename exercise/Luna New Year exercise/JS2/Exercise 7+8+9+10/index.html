@@ -12,9 +12,9 @@
 	<div class="bg-color p-5">
 		<div class="container p-4 bg-white">
 			<div class="row mb-3">
-				<div class="col-4 col-md-4 col-lg-4"><p class="text-secondary">Shopping Bag</p></div>
-				<div class="col-2 col-md-2"></div>
-				<div class="col-3 col-md-3">
+				<div class="col-4"><p class="text-secondary">Shopping Bag</p></div>
+				<div class="col-2"></div>
+				<div class="col-3">
 					<button class="btn btn-success text-white rounded" type="button" id="delete_selected">Delete selected</button>
 				</div>
 				<div class="col-3">
@@ -137,6 +137,68 @@
 			$('#empty_cart').click(function () {
 				$('.container').find('.row-item').remove();
 			});
+			var $incBtnItem1 = $('.incBtnItem1');
+			var $counterItem1_inc = $('.counterItem1_inc');
+			$incBtnItem1.click(function () {
+				$counterItem1_inc.val(parseInt($counterItem1_inc.val())+1);
+			});
+			var $incBtnItem2 = $('.incBtnItem2');
+			var $counterItem2_inc = $('.counterItem2_inc');
+			$incBtnItem2.click(function () {
+				$counterItem2_inc.val(parseInt($counterItem2_inc.val())+1);
+			});
+			var $incBtnItem3= $('.incBtnItem3');
+			var $counterItem3_inc = $('.counterItem3_inc');
+			$incBtnItem3.click(function () {
+				$counterItem3_inc.val(parseInt($counterItem3_inc.val())+1);
+			});
+			// decrement button
+			var $decBtnItem1 = $('.decBtnItem1');
+			var $counterItem1_dec = $('.counterItem1_dec');
+			$decBtnItem1.click(function () {
+				$counterItem1_dec.val(parseInt($counterItem1_dec.val())-1);
+			});
+			var $decBtnItem2 = $('.decBtnItem2');
+			var $counterItem2_dec = $('.counterItem2_dec');
+			$decBtnItem2.click(function () {
+				$counterItem2_dec.val(parseInt($counterItem2_dec.val())-1);
+			});
+			var $decBtnItem3 = $('.decBtnItem3');
+			var $counterItem3_dec = $('.counterItem3_dec');
+			$decBtnItem3.click(function () {
+				$counterItem3_dec.val(parseInt($counterItem3_dec.val())-1);
+			});
+			// calculate money of products
+			function getPriceItem1_plus() {
+				var getValueItem1 = document.getElementById('counterItem1').value;
+				var total_price_item1 = 549 * getValueItem1 + 549;
+				document.getElementById('show_total_price_item1').innerHTML = total_price_item1;
+			};
+			function getPriceItem1_minus() {
+				var getValueItem1 = document.getElementById('counterItem1').value;
+				var total_price_item1 = 549 * getValueItem1 - 549;
+				document.getElementById('show_total_price_item1').innerHTML = total_price_item1;
+			};
+			function getPriceItem2_plus() {
+				var getValueItem2 = document.getElementById('counterItem2').value;
+				var total_price_item2 = 870 * getValueItem2 + 870;
+				document.getElementById('show_total_price_item2').innerHTML = total_price_item2;
+			};
+			function getPriceItem2_minus() {
+				var getValueItem2 = document.getElementById('counterItem2').value;
+				var total_price_item2 = 870 * getValueItem2 - 870;
+				document.getElementById('show_total_price_item2').innerHTML = total_price_item2;
+			};
+			function getPriceItem3_plus() {
+				var getValueItem3 = document.getElementById('counterItem3').value;
+				var total_price_item3 = 349 * getValueItem3 + 349;
+				document.getElementById('show_total_price_item3').innerHTML = total_price_item3;
+			};
+			function getPriceItem3_minus() {
+				var getValueItem3 = document.getElementById('counterItem3').value;
+				var total_price_item3 = 349 * getValueItem3 - 349;
+				document.getElementById('show_total_price_item3').innerHTML = total_price_item3;
+			};
 		</script>
 	</div>
 </body>
